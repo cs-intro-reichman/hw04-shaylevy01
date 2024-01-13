@@ -1,20 +1,20 @@
 public class ArrayOps {
     public static void main(String[] args) {
         //test findMissingInt
-        // System.out.println(findMissingInt(new int[] {3, 0, 1}));
-        // System.out.println(findMissingInt(new int[] {0, 1, 2, 3, 4, 6}));
-        // System.out.println(findMissingInt(new int[] {0}));
+        System.out.println(findMissingInt(new int[] {3, 0, 1}));
+        System.out.println(findMissingInt(new int[] {0, 1, 2, 3, 4, 6}));
+        System.out.println(findMissingInt(new int[] {0}));
         //test secondMaxValue
-        // System.out.println(secondMaxValue(new int[] {6, 9, 4, 7, 3, 4}));
-        // System.out.println(secondMaxValue(new int[] {1, 2, 3, 4, 5}));
-        // System.out.println(secondMaxValue(new int[] {2, 8, 3, 7, 8}));
-        // System.out.println(secondMaxValue(new int[] {1, -2, 3, -4, 5}));
-        // System.out.println(secondMaxValue(new int[] {-202, 48, 13, 7, 8}));
+        System.out.println(secondMaxValue(new int[] {6, 9, 4, 7, 3, 4}));
+        System.out.println(secondMaxValue(new int[] {1, 2, 3, 4, 5}));
+        System.out.println(secondMaxValue(new int[] {2, 8, 3, 7, 8}));
+        System.out.println(secondMaxValue(new int[] {1, -2, 3, -4, 5}));
+        System.out.println(secondMaxValue(new int[] {-202, 48, 13, 7, 8}));
         //test containTheSameElements
-        // System.out.println(containsTheSameElements(new int[] {1, 2, 1, 1, 2}, new int[] {2, 1}));
-        // System.out.println(containsTheSameElements(new int[] {2, 2, 3, 7, 8, 3, 2}, new int[] {8, 2, 7, 7, 3}));
-        // System.out.println(containsTheSameElements(new int[] {1, 2, 3}, new int[] {1, 2, 3}));
-        // System.out.println(containsTheSameElements(new int[] {3, -4, 1, 2, 5}, new int[] {1, 3, -4, 5}));
+        System.out.println(containsTheSameElements(new int[] {1, 2, 1, 1, 2}, new int[] {2, 1}));
+        System.out.println(containsTheSameElements(new int[] {2, 2, 3, 7, 8, 3, 2}, new int[] {8, 2, 7, 7, 3}));
+        System.out.println(containsTheSameElements(new int[] {1, 2, 3}, new int[] {1, 2, 3}));
+        System.out.println(containsTheSameElements(new int[] {3, -4, 1, 2, 5}, new int[] {1, 3, -4, 5}));
         //test isSorted
         System.out.println(isSorted(new int[] {7, 5, 4, 3, -12}));
         System.out.println(isSorted(new int[] {1, 2, 3}));
