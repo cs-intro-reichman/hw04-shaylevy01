@@ -23,24 +23,24 @@ public class StringOps {
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
         //test capVowelsLowRest
-        System.out.println(capVowelsLowRest("Hello World"));
-        System.out.println(capVowelsLowRest("One two tHRee world"));
-        System.out.println(capVowelsLowRest("vowels are fun"));
-        System.out.println(capVowelsLowRest("intro"));
-        System.out.println(capVowelsLowRest("yellow"));
+        // System.out.println(capVowelsLowRest("Hello World"));
+        // System.out.println(capVowelsLowRest("One two tHRee world"));
+        // System.out.println(capVowelsLowRest("vowels are fun"));
+        // System.out.println(capVowelsLowRest("intro"));
+        // System.out.println(capVowelsLowRest("yellow"));
         //test camelCase
-        System.out.println(camelCase("Hello World"));
-        System.out.println(camelCase("HELLO world"));
-        System.out.println(camelCase(" tWo wordS"));
-        System.out.println(camelCase("world"));
-        System.out.println(camelCase(" Intro to coMPUter sCIEncE "));
+        // System.out.println(camelCase("Hello World"));
+        // System.out.println(camelCase("HELLO world"));
+        // System.out.println(camelCase(" tWo wordS"));
+        // System.out.println(camelCase("world"));
+        // System.out.println(camelCase(" Intro to coMPUter sCIEncE "));
         //test allIndexOf
-        System.out.println(allIndexOf("Hello world",'l'));
-        System.out.println(allIndexOf("Hello worLd",'l'));
-        System.out.println(allIndexOf("Hello world",'o'));
-        System.out.println(allIndexOf("Hello world",' '));
-        System.out.println(allIndexOf("Hello world",'d'));
-        System.out.println(allIndexOf("MMMM",'M'));
+        // System.out.println(allIndexOf("Hello world",'l'));
+        // System.out.println(allIndexOf("Hello worLd",'l'));
+        // System.out.println(allIndexOf("Hello world",'o'));
+        // System.out.println(allIndexOf("Hello world",' '));
+        // System.out.println(allIndexOf("Hello world",'d'));
+        // System.out.println(allIndexOf("MMMM",'M'));
 
     }
 
@@ -65,6 +65,7 @@ public class StringOps {
         //This function also takes as an input a string containing only letters and camel case it
         String newString = "";
         String newString2 = "";
+        String newString3 = "";
         for (int i=0 ; i<string.length(); i++){
             if (string.charAt(i) != ' '){
                 if ((int) string.charAt(i) >= 65 && (int) string.charAt(i) <= 90) {
@@ -86,7 +87,12 @@ public class StringOps {
                 i++;
             }
         }
-        return newString2;
+        for (int i=0 ; i<newString2.length() ; i++){
+            if (newString2.charAt(i) != ' '){
+                newString3 = newString3 + newString2.charAt(i);
+            }
+        }
+        return newString3;
     }
 
     public static int[] allIndexOf (String string, char chr) {
