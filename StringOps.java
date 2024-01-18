@@ -31,7 +31,7 @@ public class StringOps {
         //test camelCase
         // System.out.println(camelCase("Hello World"));
         // System.out.println(camelCase("HELLO world"));
-        // System.out.println(camelCase(" tWo wordS"));
+        System.out.println(camelCase(" tWo  wordS"));
         // System.out.println(camelCase("world"));
         // System.out.println(camelCase(" Intro to coMPUter sCIEncE "));
         //test allIndexOf
@@ -83,7 +83,9 @@ public class StringOps {
             if (newString.charAt(i) != ' '){
                 newString2 = newString2 + newString.charAt(i);
             } else {
-                newString2 = newString2 + (char) ((int) newString.charAt(i+1) - 32);
+                if (newString.charAt(i+1) != ' '){
+                    newString2 = newString2 + (char) ((int) newString.charAt(i+1) - 32);
+                }
                 i++;
             }
         }
